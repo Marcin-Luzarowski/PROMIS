@@ -1952,8 +1952,8 @@ analyze_13C_data <- function(enrichment_df, s_order, metabolite_poolsize, lab_an
 
   }
 
-  pdf(tmp_barplot_name, onefile = TRUE)
-  my_ggplot_list_barplot
+  pdf(tmp_barplot_name)
+  print(my_ggplot_list_barplot)
   dev.off()
 
   for(i in 1:nrow(tmp)){
